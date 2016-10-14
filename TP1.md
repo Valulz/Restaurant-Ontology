@@ -63,3 +63,58 @@ Date
 Quantité
 Boisson
 Cuisinier
+
+----------------------
+Edit 14/10
+
+Nous appellons Consommable, toute entitée consommable du restaurant (Boisons, plat, entrée et dessert).
+
+Nous considérons le prix comme un Concept à part entière.
+
+Prix représente :
+- Prix d'un Consommable
+- Prix d'un ingrédient (il peut être intéressant d'avoir une date pour pouvoir comparé l'évolution des prix)
+- Prix d'un menu
+- Quantité ?
+  Certains Consommables (Huîtres Normandes) ont un Qté/Prix (6/11€; 9/15€).
+  Nullable = 1 ?
+  Nous pouvons imaginé un prix de gros sur les ingrédients
+
+
+
+
+
+Prix possède aussi une monnaie précise  (Euro, dollar, ...). Un ingrédient pourrait être acheté dans une monnaie différente
+de la monnaie locale.
+
+
+Menu :
+- Nom (Langue ?)
+- Ensemble de consommable spécifique (comme un plat particulier : une purée, un steak ...) ou général (une boisson quelconque ).
+  - Référence à un plat spécifique + référence à un type de consommable.
+- Prix
+- Age Restricted ? (-12 ans) : Nullable
+- Durée (nullable)
+
+Commandable ?
+- Menu
+- Consommable
+  - Boisson
+    - Chaude
+    - Froide
+    - Vin ?
+  - Mangeable (is_vegetarien)
+    - Accompagnement (?)
+    - Plat
+    - Entrée
+    - Dessert
+
+Les Allergènes ??????
+
+Commande ?
+- Date
+- Ensemble de Commandable
+
+
+Restaurant
+- Nom (Pas de traduction du nom du restaurant)
