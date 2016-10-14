@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+
+  <rdf:Description rdf:about="http://paris_brest" xmlns:plat="http://plat#" >
+    <plat:bio>
+      <rdf:Description rdf:ID="pb123" >
+        <plat:type>Dessert</plat:type>
+      </rdf:Description>
+    </plat:bio>
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://paris_brest_eng" xmlns:plat_lang="http://pla_lang#" >
+
+    <plat_lang:bio>
+      <rdf:Description rdf:ID="pblen" >
+        <plat_lang:ref rdf:resource="http://english"/>
+        <plat_lang:nom>Paris Brest Cake</plat_lang:nom>
+      </rdf:Description>
+    </plat_lang:bio>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://paris_brest_fre" xmlns:plat_lang="http://pla_lang#" >
+
+    <plat_lang:bio>
+      <rdf:Description rdf:ID="pblfr" >
+        <plat_lang:ref rdf:resource="http://french"/>
+        <plat_lang:nom>Paris Brest</plat_lang:nom>
+      </rdf:Description>
+    </plat_lang:bio>
+
+  </rdf:Description>
+
+
+  <rdf:Description rdf:about="http://prix_pb_euros" xmlns:prix="http://prix#" >
+
+    <prix:bio>
+      <rdf:Description rdf:ID="prix_e" >
+        <prix:plat rdf:resource="http://paris_brest"/>
+        <prix:Cout rdf:datatype="http://w3.org/2001/XMLSchema#int">10</prix:Cout>
+        <prix:qte rdf:datatype="http://w3.org/2001/XMLSchema#int">1</prix:qte>
+        <prix:monnaie>Euro</prix:monnaie>
+      </rdf:Description>
+    </prix:bio>
+
+  </rdf:Description>
+
+  <rdf:Description rdf:about="http://oeuf" xmlns:ing="http://ing#" >
+
+    <ing:bio>
+      <rdf:Description rdf:ID="egg" >
+        <ing:nom>oeuf</ing:nom>
+        <ing:stock rdf:datatype="http://w3.org/2001/XMLSchema#int">10</ing:stock>
+      </rdf:Description>
+    </ing:bio>
+
+  </rdf:Description>
+
+
+    <rdf:Description rdf:about="http://paris_brest_ing_oeufs" xmlns:plat_ing="http://plat_ing#" >
+
+      <plat_ing:bio>
+        <rdf:Description rdf:ID="egg_lol" >
+          <plat_ing:qte rdf:datatype="http://w3.org/2001/XMLSchema#int">10</plat_ing:qte>
+          <plat_ing:ref_plat rdf:resource="http://paris_brest"/>
+          <plat_ing:ref_ing rdf:resource="http://oeuf"/>
+        </rdf:Description>
+      </plat_ing:bio>
+
+    </rdf:Description>
+
+</rdf:RDF>
