@@ -114,7 +114,42 @@ Les Allergènes ??????
 Commande ?
 - Date
 - Ensemble de Commandable
-
+- Prix (redondant ? calculable avec l'ensemble des commandes).
 
 Restaurant
 - Nom (Pas de traduction du nom du restaurant)
+
+-------------------
+J'ai regarder des menus d'autres restaurants, que celui présenté en TP2, histoire d'avoir une meilleur idée de ce qui était attendu
+en terme d'ontologie.
+
+Commandable ?
+- Menu
+- Consommable
+  - Boisson
+    - Chaude
+    - Froide
+    - Vin ?
+    - Apéritif ?
+  - Mangeable (is_vegetarien)
+  - Entrée
+    - Plat
+    - Accompagnement (?)
+    - Dessert
+
+
+Approvisionnement
+Fournisseur ?
+Ingrédient
+Prix
+
+----------------
+J'ai relu l'entête du TP1
+Il nous ai demandé "à terme la réalisation d'une application de gestion de la carte, des prises de commandes et de l'approvisionnement"
+
+Il ne nous est pas demandé de gérer la préparation des plats.
+
+Stock:
+- à la base je n'y voyais pas d'intérêt, il nous suffisait d'avoir les ingrédient, avec leur quantité en stock.
+Mais, après mûr réflexion, je me demande s'il ne serait pas mieux d'avoir un stock.
+Ingrédient 
